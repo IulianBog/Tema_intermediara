@@ -1,13 +1,10 @@
 package com.temaintermediara.main.repositories;
 
-import org.springframework.data.mongodb.repository.MongoRepository;
 
-import com.temaintermediara.main.model.Jocuri;
+import com.temaintermediara.main.model.Joc;
+import org.springframework.data.repository.CrudRepository;
 
-
-
-public interface JocuriRepository extends MongoRepository<Jocuri,String>
+public interface JocuriRepository extends CrudRepository<Joc,Long>
 {
-    Jocuri findJocuriById(String JocuriId);
 
 }
